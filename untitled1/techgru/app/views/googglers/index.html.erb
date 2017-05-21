@@ -1,0 +1,19 @@
+<% if @googles.count == 0%>
+    <h4>Sorry</h4>
+<% else %>
+<% @googles.each do |go| %>
+    <div class="well col-md-2">
+      <a href="/googglers/<%= go.id %>">
+      <%= image_tag go.googgler_img.url(:googgler_index), class: 'googgler'%>
+      </a>
+    </div>
+<%end%>
+    <% end %>
+
+
+<% if user_signed_in? %>
+
+<div class="well">
+  <%= link_to "Add Post", new_googgler_path %>
+</div>
+<%end%>

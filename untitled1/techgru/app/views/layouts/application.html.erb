@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Techgru</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style>
+      a, a:hover, a:active {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+
+  <p class="notice orange-red"><%= notice %></p>
+  <p class="alert orange-red"><%= alert %></p>
+
+  <div class="blue-green" style="padding: 20px;width:100%;">
+
+    <% if user_signed_in? %>
+      <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <%else%>
+      <%= link_to 'Sign In', new_user_session_path %>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <%= link_to 'Sign Up', new_user_registration_path %>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <% end %>
+
+  </div>
+  <div class="container red-purple">
+    <ul class="nav navbar-nav">
+      <li class="active"><%= link_to 'home', root_path%></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu" >
+          <% Category.all.each do |c| %>
+              <li>
+                <%= link_to c.name, googglers_path(category: c.name)%>
+              </li>
+          <%end%>
+        </ul>
+      </li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+  <div class="label label-primary" id="mylabel">
+    <%= params[:category]%>
+  </div>
+  <%= yield %>
+  </body>
+</html>

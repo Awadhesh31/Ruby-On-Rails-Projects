@@ -1,0 +1,22 @@
+<center>
+    <div class="well blue-green">
+      <%= image_tag @google.googgler_img.url(:googgler_show)%>
+      <h3><%= @google.title %></h3>
+      <div class="label label-danger">Post BY :: <%= @google.postby %></div>
+      <br/><br/>
+      <div class="label label-warning">Category :: <%= @google.category.name %></div>
+      <br/><br/>
+      <p><%= @google.about %></p>
+    </div>
+    <div class="red-purple well">
+      <%= link_to 'Home', root_path %>
+      <br/>
+      <% if user_signed_in? %>
+        <% if @google.user_id == current_user.id %>
+      <%= link_to 'Edit', edit_googgler_path(@google) %>
+      <br/>
+      <%= link_to 'Delete', googgler_path(@google), method: :delete, data: {confirm: 'Are You Sure' } %>
+              <%end%>
+      <% end %>
+    </div>
+</center>

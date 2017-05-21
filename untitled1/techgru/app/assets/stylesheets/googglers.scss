@@ -1,0 +1,74 @@
+.orange-red {
+  color: #FFFFFF;
+  background: #F47F0C;
+  background: -moz-linear-gradient(45deg, #F47F0C 0%, #D31924 100%);
+  background: -webkit-linear-gradient(45deg, #F47F0C 0%, #D31924 100%);
+  background: -o-linear-gradient(45deg, #F47F0C 0%, #D31924 100%);
+  background: -ms-linear-gradient(45deg, #F47F0C 0%, #D31924 100%);
+  background: linear-gradient(45deg, #F47F0C 0%, #D31924 100%);
+}
+
+.red-purple {
+  color: #FFFFFF;
+  background: #D31924;
+  background: -moz-linear-gradient(45deg, #D31924 0%, #800A68 100%);
+  background: -webkit-linear-gradient(45deg, #D31924 0%, #800A68 100%);
+  background: -o-linear-gradient(45deg, #D31924 0%, #800A68 100%);
+  background: -ms-linear-gradient(45deg, #D31924 0%, #800A68 100%);
+  background: linear-gradient(45deg, #D31924 0%, #800A68 100%);
+}
+
+.blue-green, .question-cta {
+  color: #FFFFFF;
+  background: #284ED2;
+  background: -moz-linear-gradient(45deg, #284ED2 0%, #00BC94 100%);
+  background: -webkit-linear-gradient(45deg, #284ED2 0%, #00BC94 100%);
+  background: -o-linear-gradient(45deg, #284ED2 0%, #00BC94 100%);
+  background: -ms-linear-gradient(45deg, #284ED2 0%, #00BC94 100%);
+  background: linear-gradient(45deg, #284ED2 0%, #00BC94 100%);
+}
+
+html {
+  font-family: "Aktiv Grotesk W01", "Helvetica", "arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+}
+
+.liquid-spectrum .comp-title {
+  position: absolute;
+  -moz-transform: translate(0, -5%);
+  -o-transform: translate(0, -5%);
+  -ms-transform: translate(0, -5%);
+  -webkit-transform: translate(0, -5%);
+  transform: translate(0, -5%);
+  top: 5%;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  padding: 0 5%;
+  z-index: 1;
+}
+.well
+{
+  background: url("/images/wallpaper.jpg") no-repeat center center;
+  margin: 30px;
+  background-size: cover;
+  border-radius: 0px;
+}
+
+p {
+  margin: 0 0 2em;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}

@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="red-purple " style="padding: 30px;">
+        <%= simple_form_for @google, :html => {:multipartt => true } do |f| %>
+            <fieldset>
+              <div class="text-center" style="font-size:20px;color: #FFFFFF;font-weight: bold;">Googgler Post</div>
+
+              <div class="form-group">
+                <div class="col-md-9">
+                  <%= f.select :category_id, @categories %>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-9">
+                  <%= f.file_field :googgler_img %>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-9">
+                  <%= f.input :title, :class=>'form-control' %>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-9">
+                  <%= f.input :about, :class=>'form-control' %>
+                </div>
+              </div>
+
+              <!-- Message body -->
+              <div class="form-group">
+                <div class="col-md-9">
+                  <%= f.input :postby, :class=>'form-control' %>
+                </div>
+              </div>
+
+              <!-- Form actions -->
+              <div class="form-group">
+                <div class="col-md-12 text-right">
+                  <%= f.button :submit, 'Save',  :class=>'form-control btn btn-warning'%>
+                </div>
+              </div>
+            </fieldset>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="well">
+<%= link_to 'Home', root_path%>
+    </div>

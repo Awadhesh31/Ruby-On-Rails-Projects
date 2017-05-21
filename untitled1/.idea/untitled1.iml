@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.15.0.pre.4, RVM: ruby-2.3.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler-1.14.6 (v1.14.6, RVM: ruby-2.3.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.6.4, RVM: ruby-2.3.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="railties-5.0.2 (v5.0.2, RVM: ruby-2.3.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake-10.4.2 (v10.4.2, RVM: ruby-2.3.2 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spring-2.0.1 (v2.0.1, RVM: ruby-2.3.2 [global]) [gem]" level="application" />
+  </component>
+</module>
